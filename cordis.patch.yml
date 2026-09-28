@@ -1,0 +1,5 @@
+# Mount both halves of the composer keymap plugin. The client half is
+# discovered from package.json dsh.client and served as lib/client.js.
+- insert:
+    - id: composer-modenter
+      name: dsh-composer-modenter

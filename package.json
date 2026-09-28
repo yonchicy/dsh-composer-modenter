@@ -1,0 +1,45 @@
+{
+  "name": "dsh-composer-modenter",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Composer keymap: Enter inserts a newline; Cmd/Ctrl+Enter sends.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Shin Yang",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "composer",
+    "keymap",
+    "enter",
+    "newline"
+  ],
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yonchicy/dsh-composer-modenter.git"
+  },
+  "homepage": "https://github.com/yonchicy/dsh-composer-modenter#readme",
+  "bugs": {
+    "url": "https://github.com/yonchicy/dsh-composer-modenter/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
